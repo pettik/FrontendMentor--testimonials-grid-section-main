@@ -32,25 +32,8 @@ body {
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-/* body::before {
-  content: '';
-  position: absolute;
-  background: url('design/desktop.jpg');
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 1100px;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: -1;
-} */
-
 .container {
-  /* opacity: 0.4; */
-  max-width: 1100px;
-  max-height: 600px;
+  max-width: 1110px;
   margin: 0 auto;
 
   display: grid;
@@ -75,9 +58,8 @@ body {
   flex-direction: row;
   column-gap: 1rem;
   align-items: center;
-  margin-bottom: -.2rem;
+  margin-bottom: -0.2rem;
 }
-
 
 .author--photo img {
   border-radius: 50%;
@@ -86,20 +68,19 @@ body {
   border: 1px solid var(--white70);
 }
 
-.author--name{
+.author--name {
   font-weight: 600;
   font-size: 12.5px;
 }
- .author--graduate {
+.author--graduate {
   color: var(--white50);
   font-weight: 500;
   font-size: 11px;
 }
 
-h2{
+h2 {
   font-weight: 600;
 }
-
 
 .text {
   color: var(--white70);
@@ -143,14 +124,14 @@ h2{
 }
 
 .white-one .author--graduate,
-.white-two .author--graduate{
-  color:var(--very-dark-grayish-blue);
+.white-two .author--graduate {
+  color: var(--very-dark-grayish-blue);
 }
 
 .white-one .text,
 .white-two .text {
   color: var(--very-dark-grayish-blue);
-  padding-top: .3rem;
+  padding-top: 0.3rem;
   line-height: 1.38;
 }
 
@@ -180,53 +161,51 @@ h2{
   font-weight: 600;
 }
 
-.attribution a:hover{
-  color:var(--modera-teviolet);
+.attribution a:hover {
+  color: var(--modera-teviolet);
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    align-items: flex-start;
+    margin: 2rem auto;
+    min-height: fit-content;
+  }
 
-@media screen and (max-width: 768px){
-body{
-  align-items: flex-start;
-  margin: 2rem auto;
-  min-height: fit-content;
-}
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 90vw;
+    margin: 2rem 0 3rem;
+    min-height: max-content;
+  }
 
-.container{
-  display:flex;
-  flex-direction: column;
-  max-width: 90vw;
-  margin: 2rem 0 3rem;
-  min-height: max-content;
-}
+  .violet span {
+    top: -5.5rem;
+    right: 0.1rem;
+  }
 
-.violet span {
-  top: -5.5rem;
-  right: .1rem;
-}
+  .violet {
+    order: 1;
+  }
 
-.violet{
-  order:1;
-}
+  .gray {
+    order: 2;
+  }
 
-.gray{
-  order:2;
-}
+  .white-two {
+    order: 3;
+  }
 
-.white-two{
-  order:3;
-}
+  .black {
+    order: 4;
+  }
 
-.black{
-  order:4;
-}
+  .white-one {
+    order: 5;
+  }
 
-.white-one{
-  order:5;
-
-}
-
-.attribution{
-  display:none;
-}
+  .attribution {
+    display: none;
+  }
 }
