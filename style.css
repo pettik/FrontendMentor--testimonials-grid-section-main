@@ -103,7 +103,7 @@ h2 {
   font-size: 450px;
   color: var(--white30);
   z-index: 1;
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .violet > p {
